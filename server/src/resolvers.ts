@@ -8,7 +8,7 @@ export const resolvers = {
   },
   Track: {
     author: (parent, _, { dataSources }) => {
-      return dataSources.trackAPI.getAuthor(parent.authorID);
+      return dataSources.trackAPI.getAuthor(parent.authorId);
     },
   },
 };
