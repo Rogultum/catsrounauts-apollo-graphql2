@@ -9,7 +9,7 @@ export class TrackAPI extends RESTDataSource {
   }
 
   getTrack(trackId: string) {
-    return this.get<TrackModel>(`tracks/${trackId}`);
+    return this.get<TrackModel>(`track/${trackId}`);
   }
 
   getAuthor(authorId: string) {
